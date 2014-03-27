@@ -2,7 +2,7 @@
 /*
 Plugin Name: Shoestrap Shortcodes
 Plugin URI: http://shoestrap.org
-Description: A simple shortcode generator. Add buttons, columns, toggles and alerts to your theme.
+Description: A simple shortcode generator. Adds buttons, columns and alerts to your Shoestrap theme.
 Version: 1.0
 Author: @aristath, @fovoc
 Author URI: http://shoestrap.org
