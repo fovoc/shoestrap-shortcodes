@@ -1,0 +1,92 @@
+body.page-template-shortcodes-php #content {
+    max-width: inherit;
+}
+.row-fluid > br{
+    display: none!important;
+}
+.page-header {
+    border-bottom: 1px solid #eee;
+    margin: 20px 0 30px;
+    padding-bottom: 9px;
+}
+
+.show-grid {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.show-grid [class*="span"] {
+    background-color: #eee;
+    border-radius: 3px;
+    line-height: 40px;
+    min-height: 40px;
+    text-align: center;
+}
+
+.alert .close {
+    box-shadow: none;
+}
+
+.nav-tabs > li {
+    margin: 0 0 -1px !important;
+    list-style: none;
+}
+
+.nav-tabs > li li {
+    margin: 0 !important;
+    list-style: none !important;
+}
+
+/**
+ * HTML Iframe style
+ */
+body.icon_selector{
+    padding: 0;
+    margin:0;
+}
+body.icon_selector li{
+    padding:5px 3px;
+    cursor:pointer;
+    width: 24%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+body.icon_selector li:hover{
+    border-radius: 3px;
+    background: #ddd;
+
+}
+.tabcreator #frm_create{
+    line-height: 30px;    
+}
+.tabcreator #txt_content{
+    width:100%;
+}
+.tabcreator .tabcreator .nav{
+    margin-bottom: 0;
+}
+.tabcreator #newtab{
+    width: 100%;
+}
+.tabcreator #deletetab{
+    display: none;
+}
+.tabcreator #fields{
+    display: none;
+}
+.tabcreator #myTabContent{
+    min-height: 20px;
+    border: 1px solid #ddd;
+    border-top: none;
+    margin-bottom: 10px;
+    padding:10px;
+}
+.tabcreator .alert,
+.tabcreator #savetab{
+    display: none;
+}
+.tabcreator #frm_create{
+    margin-bottom: 10px;
+}
+
