@@ -46,7 +46,7 @@ class Shoestrap_Shortcodes {
 
 		if ( ! is_admin() ) {
 
-			wp_enqueue_script( 'shoestrap_shortcodes_init', plugins_url( 'js/init.js', __FILE__ ) );
+			wp_enqueue_script( 'shoestrap_shortcodes_init', plugins_url( 'js/init.js', __FILE__ ), array( 'jquery' ) );
 
 		} else {
 
