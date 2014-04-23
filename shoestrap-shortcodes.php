@@ -29,7 +29,7 @@ class Shoestrap_Shortcodes {
 	 */
 	public function __construct() {
 
-		add_action( 'init' , array( $this, 'init' ) );
+		add_action( 'init', array( $this, 'init' ) );
 
 	}
 
@@ -66,11 +66,9 @@ class Shoestrap_Shortcodes {
 	 * Add the buttons
 	 */
 	function regbtns( $buttons ) {
-		
+
 		foreach ( $this->shortcodes as $shortcode ) {
-
 			array_push( $buttons, 'shoestrap_' . $shortcode );
-
 		}
 
 		return $buttons;
@@ -90,7 +88,7 @@ class Shoestrap_Shortcodes {
 
 }
 
-$bscodes = new Shoestrap_Shortcodes();
+$ss_shortcodes = new Shoestrap_Shortcodes();
 
 /**
  * The plugin updater

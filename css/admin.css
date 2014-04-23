@@ -1,134 +1,77 @@
 /* Editor
 -------------------------------------------------------------- */
-.wp_themeSkin .mceSplitButton span.mce_shoestrap_grid,
-.wp_themeSkin span.mce_shoestrap_tabs,
-.wp_themeSkin .mceSplitButton span.mce_shoestrap_collapse,
-.wp_themeSkin .mceSplitButton span.mce_shoestrap_alerts,
-.wp_themeSkin .mceSplitButton span.mce_shoestrap_wells,
-.wp_themeSkin .mceSplitButton span.mce_shoestrap_buttons,
-.wp_themeSkin .mceSplitButton span.mce_shoestrap_labels,
-.wp_themeSkin .mceSplitButton span.mce_shoestrap_tooltip,
-.wp_themeSkin span.mce_shoestrap_icons,
-.wp_themeSkin span.mce_shoestrap_lead {
+.mce-i-shoestrap-grid,
+.mce-i-shoestrap-tashoestrap,
+.mce-i-shoestrap-collapse,
+.mce-i-shoestrap-alerts,
+.mce-i-shoestrap-wells,
+.mce-i-shoestrap-buttons,
+.mce-i-shoestrap-labels,
+.mce-i-shoestrap-tooltip,
+.mce-i-shoestrap-icons,
+.mce-i-shoestrap-lead {
     background: url(../images/dwicons.png) no-repeat !important;
 }
 
-.wp_themeSkin .mceSplitButton span.mce_shoestrap_grid {
+.mce-i-shoestrap-grid {
     background-position: -2px -19px !important;
 }
-.wp_themeSkin .mceSplitButton:hover span.mce_shoestrap_grid,
-.wp_themeSkin .mceSplitButtonSelected .mceSplitButton span.mce_shoestrap_grid {
-    background-position: -2px 0px !important;
-}
 
-.wp_themeSkin span.mce_shoestrap_tabs {
+.mce-i-shoestrap-tabs {
     background-position: -23px -19px !important;
 }
-.wp_themeSkin span.mce_shoestrap_tabs:hover {
-    background-position: -23px 0px !important
-}
 
-.wp_themeSkin .mceSplitButton span.mce_shoestrap_collapse {
+.mce-i-shoestrap-collapse {
     background-position: -44px -19px !important;
 }
-.wp_themeSkin .mceSplitButton:hover span.mce_shoestrap_collapse,
-.wp_themeSkin .mceSplitButtonSelected .mceSplitButton span.mce_shoestrap_collapse  {
-    background-position: -44px 0px !important;
-}
 
-.wp_themeSkin .mceSplitButton span.mce_shoestrap_alerts {
+.mce-i-shoestrap-alerts {
     background-position: -65px -19px !important;
 }
-.wp_themeSkin .mceSplitButton:hover span.mce_shoestrap_alerts,
-.wp_themeSkin .mceSplitButtonSelected .mceSplitButton span.mce_shoestrap_alerts  {
-    background-position: -65px 0px !important;
-}
 
-.wp_themeSkin .mceSplitButton span.mce_shoestrap_wells {
+.mce-i-shoestrap-wells {
     background-position: -86px -19px !important;
 }
-.wp_themeSkin .mceSplitButton:hover span.mce_shoestrap_wells,
-.wp_themeSkin .mceSplitButtonSelected .mceSplitButton span.mce_shoestrap_wells  {
-    background-position: -86px 0 !important;
-}
 
-.wp_themeSkin .mceSplitButton span.mce_shoestrap_buttons {
+.mce-i-shoestrap-buttons {
     background-position: -107px -19px !important;
 }
-.wp_themeSkin .mceSplitButton:hover span.mce_shoestrap_buttons,
-.wp_themeSkin .mceSplitButtonSelected .mceSplitButton span.mce_shoestrap_buttons  {
-    background-position: -107px 0px !important;
-}
 
-.wp_themeSkin .mceSplitButton span.mce_shoestrap_labels {
+.mce-i-shoestrap-labels {
     background-position: -191px -19px !important;
 }
-.wp_themeSkin .mceSplitButton:hover span.mce_shoestrap_labels,
-.wp_themeSkin .mceSplitButtonSelected .mceSplitButton span.mce_shoestrap_labels  {
-    background-position: -191px 0px !important;
-}
-
-.wp_themeSkin .mceSplitButton span.mce_shoestrap_tooltip {
+.mce-i-shoestrap-tooltip {
     background-position: -170px -19px !important;
 }
-.wp_themeSkin .mceSplitButton:hover span.mce_shoestrap_tooltip,
-.wp_themeSkin .mceSplitButtonSelected .mceSplitButton span.mce_shoestrap_tooltip  {
-    background-position: -170px 0px !important;
-}
 
-.wp_themeSkin span.mce_shoestrap_icons {
+.mce-i-shoestrap-icons {
     background-position: -128px -19px !important;
 }
-.wp_themeSkin span.mce_shoestrap_icons:hover  {
-    background-position: -128px 0 !important;
-}
 
-.wp_themeSkin span.mce_shoestrap_lead {
+.mce-i-shoestrap-lead {
     background-position: -149px -19px !important;
-}
-.wp_themeSkin span.mce_shoestrap_lead:hover  {
-    background-position: -149px 0 !important;
-}
-
-.mceMenu label {
-    display: block;
-    margin: 10px 0 0;
-}
-
-.mceMenu input[type=text],
-.mceMenu select {
-    clear: both;
-    display: block;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 100%;
-    min-width: 160px;
-    padding: 3px;
-    margin:  5px 0 0;
 }
 
 /* Iframe
 -------------------------------------------------------------- */
-#bs-wrapper {
+#shoestrap-wrapper {
     padding: 20px;
 }
 
-#bs-wrapper .nav-tabs > .active > a > [class^="icon-"],
-#bs-wrapper .nav-tabs > .active > a > [class*=" icon-"] {
+#shoestrap-wrapper .nav-tashoestrap > .active > a > [class^="icon-"],
+#shoestrap-wrapper .nav-tashoestrap > .active > a > [class*=" icon-"] {
     background-image: url("../images/glyphicons-halflings.png");
 }
 
-#bs-wrapper .nav-tabs .add-new {
+#shoestrap-wrapper .nav-tabs .add-new {
     float: right;
 }
 
-#bs-wrapper .nav-tabs li a {
+#shoestrap-wrapper .nav-tabs li a {
     outline: none;
 }
 
-#bs-wrapper .nav-tabs .delete-tab {
+#shoestrap-wrapper .nav-tabs .delete-tab {
     margin: 0 0 0 5px;
     display: none;
     height: 16px;
@@ -137,17 +80,17 @@
     width: 16px;
 }
 
-#bs-wrapper .nav-tabs .active .delete-tab {
+#shoestrap-wrapper .nav-tabs .active .delete-tab {
     display: inline-block;
 }
 
-#bs-wrapper .nav-tabs .active .delete-tab:hover {
+#shoestrap-wrapper .nav-tabs .active .delete-tab:hover {
     background: #bbb;
     border-radius: 20px;
     color: #fff;
 }
 
-#bs-wrapper .tab-content textarea {
+#shoestrap-wrapper .tab-content textarea {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -157,9 +100,9 @@
     min-height: 120px;
 }
 
-#bs-wrapper .tab-content input[type=text],
-#bs-wrapper .tab-content select,
-#bs-wrapper #bs-grid input[type=number] {
+#shoestrap-wrapper .tab-content input[type=text],
+#shoestrap-wrapper .tab-content select,
+#shoestrap-wrapper #shoestrap-grid input[type=number] {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -168,7 +111,7 @@
     height: 30px;
 }
 
-#bs-wrapper #bs-grid form {
+#shoestrap-wrapper #shoestrap-grid form {
     margin: 0;
 }
 
