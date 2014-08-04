@@ -3,16 +3,19 @@
 Plugin Name: Shoestrap Shortcodes
 Plugin URI: http://shoestrap.org
 Description: A simple shortcode generator. Adds buttons, columns and alerts to your Shoestrap theme.
-Version: 1.1
+Version: 1.2
 Author: @aristath, @fovoc
 Author URI: http://wpmu.io
 
 */
 
+define( 'SHOESTRAP_SHORTCODES_FILE', __FILE__ );
+
 // Require the shortcode files.
 require_once( 'inc/grid.php' );
 require_once( 'inc/alert.php' );
 require_once( 'inc/buttons.php' );
+require_once( 'inc/updater/updater.php' );
 
 
 class Shoestrap_Shortcodes {
@@ -89,59 +92,3 @@ class Shoestrap_Shortcodes {
 }
 
 $ss_shortcodes = new Shoestrap_Shortcodes();
-
-// Include the EDD SL Plugin updater if it's not already included
-if ( ! class_exists( 'EDD_SL_Plugin_Updater' ) ) {
-	include( dirname( __FILE__ ) . '/updater/EDD_SL_Plugin_Updater.php' );
-}
-
-/**
- * The plugin updater
- */
-function shoestrap_shortcodes_plugin_updater() {
-
-	$edd_updater = new EDD_SL_Plugin_Updater( 'http://shoestrap.org', __FILE__, array( 
-			'version' 	=> '1.1',
-			'license'   => '84f2efdcfd77445058ada959461aec7d',
-			'item_name' => 'Shoestrap Shortcodes',
-			'author' 	=> 'aristath, fovoc',
-		)
-	);
-}
-add_action( 'admin_init', 'shoestrap_shortcodes_plugin_updater' );
-
-
-function shoestrap_shortcodes_plugin_updater_activate_license() {
-	global $wp_version;
-
-	// If the license is valid there's no need to process this further.
-	if ( get_transient( 'shoestrap_shortcodes_license_status' ) == 'valid' ) {
-		return;
-	}
-
-	$api_params = array(
-		'edd_action' => 'activate_license',
-		'license'    => '84f2efdcfd77445058ada959461aec7d',
-		'item_name'  => urlencode( 'Shoestrap Shortcodes' )
-	);
-
-	// Get the server response
-	$response = wp_remote_get( add_query_arg( $api_params, 'http://shoestrap.org' ), array( 'timeout' => 15, 'sslverify' => false ) );
-
-	// Make sure no error has occured
-	if ( is_wp_error( $response ) ) {
-		return false;
-	}
-
-	// Get the license data
-	$license_data = json_decode( wp_remote_retrieve_body( $response ) );
-
-	if ( 'valid' == $license_data->license ) {
-		// Set a 72-hour transient.
-		set_transient( 'shoestrap_shortcodes_license_status', $license_data->license, 72 * 60 * 60 );
-	} else {
-		// Set a 1-hour transient.
-		set_transient( 'shoestrap_shortcodes_license_status', $license_data->license, 1 * 60 * 60 );
-	}
-}
-add_action('admin_init', 'shoestrap_shortcodes_plugin_updater_activate_license');
